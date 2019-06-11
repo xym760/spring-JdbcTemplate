@@ -27,6 +27,16 @@ public class JDBCTest {
     }
 
     /**
+     * 测试实际如何使用JdbcTemplate
+     */
+    @Test
+    public void testActualUse(){
+        EmployeeDao employeeDao= (EmployeeDao) applicationContext.getBean("employeeDao");
+        Employee temp=employeeDao.get(5);
+        System.out.println(temp);
+    }
+
+    /**
      * 从数据库中获取一条记录，实际返回一个对象
      * 使用SQL中列的别名完成数据库字段名到对象属性名的映射。如last_name映射为对象属性名lastName
      */
