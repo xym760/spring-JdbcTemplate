@@ -70,7 +70,7 @@ public class JDBCTest {
     }
 
     /**
-     * 执行批量更新：insert，update，delete
+     * 执行批量更新：insert，update，delete等
      * 最后一个参数是Object[]类型的List，因为一条记录对应一个Object[]，多条记录就对应一个Object数组类型的List
      */
     @Test
